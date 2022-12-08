@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "docker:build": "docker build -t pgpool:latest .",
-    "docker:run": "docker run -p 9999:9999 -d pgpool:latest"
+    "docker:run": "docker run -p 9999:9999 -v /var/lib/sqlite:/var/db/pglogger.db -d pgpool:latest"
   },
   "keywords": [],
   "author": "",
